@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Green Infrastructure Network (RGIN) - Northwest Ohio</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    
+    <!-- Leaflet.markercluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    
+    <!-- Leaflet.draw CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>Regional Green Infrastructure Network</h1>
+            <h2>Wood, Lucas, and Ottawa Counties, Ohio</h2>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search for parks, trails, etc...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="sidebar">
+                <div class="sidebar-section">
+                    <h3>Layers</h3>
+                    <div id="layer-controls">
+                        <!-- Layer controls will be added here dynamically -->
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Filters</h3>
+                    <div id="filter-controls">
+                        <!-- Filter controls will be added here dynamically -->
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Analysis Tools</h3>
+                    <div id="analysis-tools">
+                        <button id="buffer-tool" class="tool-button">Buffer Analysis</button>
+                        <button id="intersection-tool" class="tool-button">Intersection Analysis</button>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Legend</h3>
+                    <div id="map-legend">
+                        <!-- Legend will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            
+            <div id="feature-info" class="hidden">
+                <div class="feature-header">
+                    <h3 id="feature-title">Feature Information</h3>
+                    <button id="close-feature-info"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="feature-content">
+                    <!-- Feature information will be displayed here -->
+                </div>
+            </div>
+        </main>
+        
+        <div id="analysis-panel" class="hidden">
+            <div class="panel-header">
+                <h3 id="analysis-title">Analysis</h3>
+                <button id="close-analysis"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="analysis-content">
+                <!-- Analysis controls will be displayed here -->
+            </div>
+            <div id="analysis-results">
+                <!-- Analysis results will be displayed here -->
+            </div>
+            <div class="panel-footer">
+                <button id="export-results" class="disabled">Export Results</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Regional Green Infrastructure Network (RGIN) - Northwest Ohio | Created for Regional Planning Authority</p>
+        </footer>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <!-- Leaflet.markercluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    
+    <!-- Leaflet.draw JS -->
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+    
+    <!-- Turf.js for spatial analysis -->
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/layers.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/analysis.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
