@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Maumee Bay State Park",
+        "COUNTY": "Lucas",
+        "TYPE": "State Park",
+        "STATUS": "Protected",
+        "ACRES": 1336
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.37, 41.68],
+          [-83.35, 41.68],
+          [-83.35, 41.70],
+          [-83.37, 41.70],
+          [-83.37, 41.68]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "East Harbor State Park",
+        "COUNTY": "Ottawa",
+        "TYPE": "State Park",
+        "STATUS": "Protected",
+        "ACRES": 1831
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-82.82, 41.54],
+          [-82.80, 41.54],
+          [-82.80, 41.56],
+          [-82.82, 41.56],
+          [-82.82, 41.54]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Magee Marsh Wildlife Area",
+        "COUNTY": "Ottawa",
+        "TYPE": "Wildlife Area",
+        "STATUS": "Protected",
+        "ACRES": 2202
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.20, 41.60],
+          [-83.18, 41.60],
+          [-83.18, 41.62],
+          [-83.20, 41.62],
+          [-83.20, 41.60]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "W.W. Knight Nature Preserve",
+        "COUNTY": "Wood",
+        "TYPE": "Park",
+        "STATUS": "Protected",
+        "ACRES": 42
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.62, 41.42],
+          [-83.61, 41.42],
+          [-83.61, 41.43],
+          [-83.62, 41.43],
+          [-83.62, 41.42]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Slippery Elm Trail",
+        "COUNTY": "Wood",
+        "TYPE": "Trail",
+        "STATUS": "Protected",
+        "ACRES": 120
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-83.65, 41.37],
+          [-83.64, 41.38],
+          [-83.63, 41.39],
+          [-83.62, 41.40]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Cedar Creeks Preserve",
+        "COUNTY": "Wood",
+        "TYPE": "Park",
+        "STATUS": "Protected",
+        "ACRES": 63
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.55, 41.45],
+          [-83.54, 41.45],
+          [-83.54, 41.46],
+          [-83.55, 41.46],
+          [-83.55, 41.45]
+        ]]
+      }
+    }
+  ]
+}
